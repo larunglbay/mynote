@@ -1,0 +1,28 @@
+[package]
+name = "mynote"
+version = "0.1.0"
+authors = ["Near Inc <hello@near.org>"]
+edition = "2018"
+
+[lib]
+crate-type = ["cdylib", "rlib"]
+
+[dependencies]
+near-sdk = "3.1.0"
+serde = "1.0.102"
+serde_derive = "1.0.102"
+serde_json = "1.0.41"
+
+[profile.release]
+codegen-units = 1
+# Tell `rustc` to optimize for small code size.
+opt-level = "z"
+lto = true
+debug = false
+panic = "abort"
+serde_derive = "0.9"
+# Opt into extra safety checks on arithmetic operations https://stackoverflow.com/a/64136471/249801
+overflow-checks = true
+
+[workspace]
+members = []
