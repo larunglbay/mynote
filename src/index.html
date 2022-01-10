@@ -22,7 +22,10 @@
         <div class='color-box lavendar'></div>
         <div class='color-box pink'></div>
       </div>
-      <div id="account"></div>
+      <div style="display: inherit;">
+        <span id="account"></span>
+        <button id="sign-out-button" style="display: none">Sign Out</button>
+      </div>
     </header>
     <main id="signed-out-flow" style="display: none">
       <h1>Welcome to NEAR!</h1>
@@ -74,6 +77,6 @@
     </div>
   </body>
   <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js'></script>
-  <script src="./index.js"></script>
   <script type='text/javascript' src='app.js'></script>
+  <script type='text/javascript' src="./index.js"></script>
 </html>

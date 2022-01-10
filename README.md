@@ -1,7 +1,7 @@
-mynote
+# mynote
 ==================
 
-This app was initialized with [create-near-app]
+This app was initialized with [create-near-app] use to demo note app using NEAR smartcontract
 
 
 Quick Start
